@@ -1,6 +1,7 @@
 import React, {useCallback, useState} from 'react';
 import './App.css';
 import List from "./List";
+import {SecondUseMemo} from "./SecondUseMemo";
 
 function App() {
 
@@ -17,7 +18,8 @@ function App() {
   }
 
   return (
-    <div style={theme}>
+
+    /*<div style={theme}>
       <input
       type={"number"}
       value={number}
@@ -27,8 +29,9 @@ function App() {
       onClick={() => setDark(prevDark => !prevDark)}>
         Toggle Theme
       </button>
-      <List getItems={getItems} />
-    </div>
+      <List getItems={getItems} />*/
+        <SecondUseMemo />
+
   );
 }
 

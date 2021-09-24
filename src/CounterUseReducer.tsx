@@ -18,6 +18,7 @@ function counterReducer(state: InitialStateType = initialState, action: any) {
 
 export default function CounterUseReducer() {
     const [state, dispatch] = useReducer(counterReducer, initialState);
+    console.log("CounterUseReducer")
 
     return (
         <div>
@@ -29,3 +30,4 @@ export default function CounterUseReducer() {
         </div>
     )
 }
+
